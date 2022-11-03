@@ -15,7 +15,7 @@ body {
 	min-height: 100vh;
 }
 
-/* ! Начало */
+// ! Начало
 .wrapper {
 	overflow: hidden;
 	display: flex;
@@ -36,7 +36,7 @@ a {
 	color: white;
 }
 
-/* ! header */
+// ! header
 .header {
 	position: fixed;
 	left: 0;
@@ -81,7 +81,7 @@ a {
 	font-weight: 700;
 }
 
-/* ! resume */
+// ! resume
 .button {
 	position: relative;
 	display: inline-block;
@@ -114,7 +114,7 @@ a {
 	display: block;
 }
 
-/* ! top */
+// ! top
 .button__line--top {
 	top: 0;
 	left: -100%;
@@ -127,7 +127,7 @@ a {
 	left: 100%;
 }
 
-/* ! bottom */
+// ! bottom
 .button__line--bottom {
 	bottom: 0;
 	right: -100%;
@@ -140,7 +140,7 @@ a {
 	right: 100%;
 }
 
-/* ! right */
+// ! right
 .button__line--right {
 	right: 0;
 	top: -100%;
@@ -154,7 +154,7 @@ a {
 	transition-delay: 0s;
 }
 
-/* ! left */
+// ! left
 .button__line--left {
 	left: 0;
 	bottom: -100%;
@@ -168,10 +168,10 @@ a {
 	transition-delay: 0s;
 }
 
-/* ! main */
-/* ! section */
+// ! main
+// ! section
 
-/* ! footer */
+// ! footer
 .footer {
 	margin-top: auto;
 }
