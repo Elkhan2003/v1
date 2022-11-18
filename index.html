@@ -6,56 +6,186 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./Elcho/fonts/fonts.css" />
 		<link rel="stylesheet" href="./Elcho/css/style.css" />
-		<link rel="icon" href="./Elcho/img/atom.svg" />
-		<title>Elkhan S</title>
+		<link rel="icon" href="./Elcho/img/atom.png" />
+		<title>Advanced HTML Tags</title>
 	</head>
-	<body>
-		<!-- ! Начало -->
-		<div class="wrapper">
-			<div class="wrap">
-				<!-- ! header -->
-				<header class="header">
-					<div id="header__scroll">
-						<div class="container">
-							<div class="header__content">
-								<div class="header__logo">
-									<a href="#"><img src="./Elcho/img/atom.svg" alt="" /></a>
-								</div>
 
-								<nav class="header__nav">
-									<ul class="header__ul">
-										<li><a href="#">About</a></li>
-										<li><a href="#">Experience</a></li>
-										<li><a href="#">Work</a></li>
-										<li><a href="#">Contact</a></li>
-									</ul>
-									<a class="button" href="./phone.html">
-										<span class="button__line button__line--top smooth"></span>
-										<span
-											class="button__line button__line--right smooth"></span>
-										<span
-											class="button__line button__line--bottom smooth"></span>
-										<span class="button__line button__line--left smooth"></span>
-										Resume
-									</a>
-								</nav>
+	<body>
+		<!-- ! loader  -->
+		<div class="preloader">
+			<div class="preloader__image"></div>
+		</div>
+
+		<!-- ! start -->
+		<div class="wrapper">
+			<!-- ! header -->
+			<header class="header">
+				<div id="header__scroll">
+					<div class="container">
+						<div class="header__content">
+							<div class="header__logo">
+								<a href="#"><img src="./Elcho/img/atom.png" alt="" /></a>
+							</div>
+
+							<nav class="header__nav">
+								<ul class="header__ul">
+									<div>
+										<a href="#">
+											<span>About</span>
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<span>Experience</span>
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<span>Work</span>
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<span>Contact</span>
+										</a>
+									</div>
+								</ul>
+								<a class="button" href="#">
+									<span class="button__line button__line--top smooth"></span>
+									<span class="button__line button__line--right smooth"></span>
+									<span class="button__line button__line--bottom smooth"></span>
+									<span class="button__line button__line--left smooth"></span>
+									Resume
+								</a>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- ! main -->
+			<main class="main">
+				<!-- ! 1 section -->
+				<section class="block__one">
+					<div class="video">
+						<video class="video__media" autoplay loop muted>
+							<source src="https://elcho.ru/Untitled.mp4" type="video/mp4" />
+						</video>
+					</div>
+					<div class="block__one__title">
+						<div class="container">
+							<div class="content">
+								<div class="title">
+									<h1>Welcome to <span>Dev</span><span>X</span></h1>
+								</div>
 							</div>
 						</div>
 					</div>
-				</header>
-				<!-- ! main -->
-				<main>
-					<!-- ! section -->
-					<section class="block__one">
-						<div class="container">
-							<div class="block__one__content"></div>
+				</section>
+
+				<!-- ! 2 section -->
+				<section class="block__two">
+					<div class="container">
+						<div class="content">
+							<h1>Video</h1>
+							<div class="cards">
+								<div class="card">
+									<iframe
+										src="https://www.youtube.com/embed/BRybrM2ELIw"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen></iframe>
+								</div>
+								<div class="card">
+									<iframe
+										src="https://www.youtube.com/embed/zau4VpUxCBo"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen></iframe>
+								</div>
+								<div class="card">
+									<iframe
+										src="https://www.youtube.com/embed/_P7S2lKif-A"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen></iframe>
+								</div>
+								<div class="card">
+									<iframe
+										src="https://www.youtube.com/embed/5VD8n-0iiqw"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen></iframe>
+								</div>
+								<div class="card">
+									<iframe
+										src="https://www.youtube.com/embed/p3ezI801X7s"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen></iframe>
+								</div>
+								<div class="card">
+									<iframe
+										src="https://www.youtube.com/embed/UGMALfXWBXY"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen></iframe>
+								</div>
+							</div>
 						</div>
-					</section>
-				</main>
-				<!-- ! footer -->
-				<footer class="footer">Конец</footer>
-			</div>
+					</div>
+				</section>
+
+				<!-- ! 3 section -->
+				<section class="block__three">
+					<div class="container">
+						<div class="content">
+							<h1>Music</h1>
+							<div class="players">
+								<div class="player">
+									<audio controls>
+										<source
+											src="https://elcho.ru/audio/1.mp3"
+											type="audio/mp3" />
+									</audio>
+								</div>
+								<div class="player">
+									<audio controls>
+										<source
+											src="https://elcho.ru/audio/2.mp3"
+											type="audio/mp3" />
+									</audio>
+								</div>
+								<div class="player">
+									<audio controls>
+										<source
+											src="https://elcho.ru/audio/3.mp3"
+											type="audio/mp3" />
+									</audio>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<!-- ! footer -->
+			<footer class="footer">
+				<div class="container">
+					<div class="content">
+						<h1>By Elcho Effects</h1>
+					</div>
+				</div>
+			</footer>
 		</div>
+		<script src="./Elcho/js/jquery-3.6.1.min.js"></script>
+		<script src="./Elcho/js/loader.js"></script>
 		<script src="./Elcho/js/script.js"></script>
 	</body>
 </html>
