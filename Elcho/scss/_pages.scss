@@ -48,7 +48,7 @@ body {
 .container {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1280px;
 	padding: 0 20px;
 }
 
@@ -121,14 +121,14 @@ a {
 		&::after {
 			content: "";
 			position: absolute;
-			height: 6px;
 			width: 0;
+			height: 6px;
 			border-radius: 16px;
 			background: #2196f3;
 			box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
 			left: 50%;
-			transform: translateX(-50%);
 			bottom: -8px;
+			transform: translateX(-50%);
 			// transition: all 0.3s ease-out 0s;
 			transition: 0.5s;
 		}
@@ -304,7 +304,7 @@ a {
 	margin: 50px 0;
 
 	.content {
-		background: rgba(201, 0, 255, 0.22);
+		background: rgba(0, 0, 0, 0.35);
 		backdrop-filter: blur(6.9px);
 		border-radius: 16px;
 		box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3;
@@ -348,7 +348,7 @@ a {
 	margin: 50px 0;
 
 	.content {
-		background: rgba(201, 0, 255, 0.22);
+		background: rgba(0, 0, 0, 0.35);
 		border-radius: 16px;
 		backdrop-filter: blur(6.9px);
 		box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3;
@@ -385,12 +385,52 @@ a {
 	}
 }
 
+// ! 4 section
+.block__four {
+	.content {
+		h1 {
+			margin-bottom: 20px;
+
+			text-align: center;
+			text-shadow: 5px 5px 20px red, 5px 5px 50px red, 5px 5px 20px red;
+			font-size: 70px;
+			font-weight: 700;
+
+			color: white;
+		}
+	}
+	.cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+
+		.card {
+			margin: 30px;
+			padding: 50px;
+
+			background: rgba(0, 0, 0, 0.35);
+			border-radius: 16px;
+			backdrop-filter: blur(6.9px);
+			box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3;
+
+			img {
+				width: 150px;
+				height: 150px;
+			}
+		}
+	}
+}
+
+// ! 5 section
+
+
 // ! footer
 .footer {
 	margin-top: auto;
 
 	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3;
-	background: rgba(201, 0, 255, 0.22);
+	background: rgba(0, 0, 0, 0.22);
 	backdrop-filter: blur(6.9px);
 
 	h1 {
