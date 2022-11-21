@@ -19,7 +19,7 @@ body {
 .container {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1160px;
+	max-width: 1280px;
 	padding: 0 20px;
 }
 
@@ -203,7 +203,7 @@ a {
 	.content {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: space-between;
 		align-items: center;
 	}
 	.text__animation {
