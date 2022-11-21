@@ -17,19 +17,30 @@ window.onscroll = function () {
 	}
 };
 
+// !
+
 // ! JQuery
 $(function () {
 	// ! Smooth scroll
 	$(document).ready(function () {
-		$('a[data-scroll^="#"]').click(function () {
-			//Сохраняем значение атрибута href в переменной:
-			var target = $(this).attr("data-scroll");
+		$('.nav a[data-scroll^="#"]').click(function () {
+			let target = $(this).attr("data-scroll");
 			$("html, body").animate(
 				{
-					scrollTop: $(target).offset().top - 70, //можно вычесть высоту меню
+					scrollTop: $(target).offset().top - 70,
 				},
 				700
 			);
+			$(".nav a span").removeClass("active");
+			$(this).addClass("active");
+			return false;
+		});
+	});
+
+	// ! scroll top
+	$(function () {
+		$("#scroll_top").click(function () {
+			$("html, body").animate({ scrollTop: 0 }, 600);
 			return false;
 		});
 	});
