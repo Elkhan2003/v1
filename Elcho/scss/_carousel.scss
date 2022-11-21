@@ -99,6 +99,9 @@ $card_bg_color: #7c2ae8;
 		font-size: 14px;
 		color: #707070;
 		text-align: center;
+
+		position: relative;
+		z-index: 5;
 	}
 	.button {
 		border: none;
