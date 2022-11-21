@@ -251,22 +251,25 @@ a {
 
 	// ? text animation
 	.text__animation {
+		padding: 20px 30px;
 		background: #010718;
-		h1{
+		box-shadow: 0 0 10px #03e9f4, 0 0 40px #03e9f4, 0 0 80px #03e9f4;
+		border-radius: 15px;
+		h1 {
 			text-align: center;
 			color: white;
 		}
-		.container {
+		.container__title {
 			width: 270px;
 			overflow: hidden;
 		}
-		.container .text {
+		.container__title .text {
 			position: relative;
 			color: #4070f4;
-			font-size: 30px;
+			font-size: 35px;
 			font-weight: 600;
 		}
-		.container .text.first-text {
+		.container__title .text.first-text {
 			color: #fff;
 		}
 		.text.sec-text:before {
