@@ -1,13 +1,3 @@
-// // ! Sticky Navigation Menu JS Code
-// let header = document.querySelector("#header__scroll");
-// window.onscroll = function () {
-// 	if (document.documentElement.scrollTop > 20) {
-// 		header.classList.add("small");
-// 	} else {
-// 		header.classList.remove("small");
-// 	}
-// };
-
 // ! loader
 window.onload = function () {
 	document.body.classList.add("loaded_hiding");
@@ -15,7 +5,16 @@ window.onload = function () {
 		document.body.classList.add("loaded");
 		document.body.classList.remove("loaded_hiding");
 	}, 500);
-	F;
+};
+
+// ! Sticky Navigation Menu JS Code
+let header = document.querySelector("#header__scroll");
+window.onscroll = function () {
+	if (document.documentElement.scrollTop > 20) {
+		header.classList.add("small");
+	} else {
+		header.classList.remove("small");
+	}
 };
 
 // ! Multiple Typing Text Animation
@@ -36,23 +35,13 @@ const textLoad = () => {
 textLoad();
 setInterval(textLoad, 12000);
 
-// !
+// ! JQuery
 $(function () {
-	// ! Sticky Header on Scroll
-	$(window).scroll(function () {
-		let sc = $(window).scrollTop();
-		if (sc > 50) {
-			$("#header__scroll").addClass("small");
-		} else {
-			$("#header__scroll").removeClass("small");
-		}
-	});
-
 	// ! Smooth scroll
 	$("[data-scroll]").on("click", function (event) {
 		event.preventDefault();
 
-		var $this = $(this),
+		let $this = $(this),
 			blockId = $this.data("scroll"),
 			blockOffset = $(blockId).offset().top;
 
@@ -73,23 +62,5 @@ $(function () {
 
 		$(this).toggleClass("active");
 		$("#nav").toggleClass("active");
-	});
-
-	// ! Collapse
-	$("[data-collapse]").on("click", function (event) {
-		event.preventDefault();
-
-		var $this = $(this),
-			blockId = $this.data("collapse");
-
-		$this.toggleClass("active");
-	});
-
-	// ! Slider
-	$("[data-slider]").slick({
-		infinite: true,
-		fade: false,
-		slidesToShow: 1,
-		slidesToScroll: 1,
 	});
 });
