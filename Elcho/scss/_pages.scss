@@ -79,11 +79,17 @@ a {
 
 	padding: 0;
 	list-style: none;
+
 	a {
 		display: block;
 		margin: 0 12px;
 
 		font-weight: 700;
+	}
+
+	i {
+		display: block;
+		font-size: 20px;
 	}
 
 	span {
