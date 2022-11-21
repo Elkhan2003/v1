@@ -8,6 +8,34 @@
 // 	}
 // };
 
+// ! loader
+window.onload = function () {
+	document.body.classList.add("loaded_hiding");
+	window.setTimeout(function () {
+		document.body.classList.add("loaded");
+		document.body.classList.remove("loaded_hiding");
+	}, 500);
+	F;
+};
+
+// ! Multiple Typing Text Animation
+const text = document.querySelector(".sec-text");
+
+const textLoad = () => {
+	setTimeout(() => {
+		text.textContent = "Freelancer";
+	}, 0);
+	setTimeout(() => {
+		text.textContent = "Blogger";
+	}, 4000);
+	setTimeout(() => {
+		text.textContent = "YouTuber";
+	}, 8000); //1s = 1000 milliseconds
+};
+
+textLoad();
+setInterval(textLoad, 12000);
+
 // !
 $(function () {
 	// ! Sticky Header on Scroll
