@@ -7,69 +7,47 @@
 		<link rel="stylesheet" href="./Elcho/fonts/fonts.css" />
 		<link rel="stylesheet" href="./Elcho/css/style.css" />
 		<link rel="icon" href="./Elcho/img/atom.png" />
-		<title>Advanced HTML Tags</title>
+		<title>Elcho</title>
 	</head>
 
 	<body>
-		<!-- ! loader  -->
-		<div class="preloader">
-			<div class="preloader__image"></div>
-		</div>
-
 		<!-- ! start -->
 		<div class="wrapper">
 			<!-- ! header -->
-			<header class="header">
-				<div id="header__scroll">
-					<div class="container">
-						<div class="header__content">
-							<div class="header__logo">
-								<a href="#"><img src="./Elcho/img/atom.png" alt="" /></a>
-							</div>
+			<header class="header" id="header__scroll">
+				<div class="container">
+					<div class="header__content">
+						<div class="header__logo" data-scroll="#intro">Elcho</div>
 
-							<nav class="header__nav">
-								<ul class="header__ul">
-									<div>
-										<a href="#">
-											<span>About</span>
-										</a>
-									</div>
-									<div>
-										<a href="#">
-											<span>Experience</span>
-										</a>
-									</div>
-									<div>
-										<a href="#">
-											<span>Work</span>
-										</a>
-									</div>
-									<div>
-										<a href="#"> <span>Contact</span> </a>
-									</div>
-								</ul>
+						<nav class="nav" id="nav">
+							<a href="#about" data-scroll="#about">
+								<span>About</span>
+							</a>
+							<a href="#skills" data-scroll="#skills">
+								<span>Skills</span>
+							</a>
+							<a href="#services" data-scroll="#services">
+								<span>Services</span>
+							</a>
+							<a href="#work" data-scroll="#work">
+								<span>Work</span>
+							</a>
+							<a href="#contact" data-scroll="#contact">
+								<span>Contact</span>
+							</a>
+							<a class="nav__link" href="#">
+								<i class="fas fa-search"></i>
+							</a>
+							<a class="nav__link" href="#">
+								<i
+									class="fa-solid fa-cog fa-spin"
+									style="--fa-animation-direction: reverse"></i>
+							</a>
+						</nav>
 
-								<!-- ! resume V1 -->
-								<!-- <a class="button" href="#">
-									<span class="button__line button__line--top smooth"></span>
-									<span class="button__line button__line--right smooth"></span>
-									<span class="button__line button__line--bottom smooth"></span>
-									<span class="button__line button__line--left smooth"></span>
-									Resume
-								</a> -->
-
-								<!-- ! resume V2 -->
-								<div class="header__animation__button">
-									<a href="https://github.com/Elkhan2003" target="_blank">
-										<span></span>
-										<span></span>
-										<span></span>
-										<span></span>
-										GitHub
-									</a>
-								</div>
-							</nav>
-						</div>
+						<button class="nav-toggle" id="nav_toggle" type="button">
+							<span class="nav-toggle__item">Menu</span>
+						</button>
 					</div>
 				</div>
 			</header>
@@ -78,273 +56,30 @@
 			<main class="main">
 				<!-- ! 1 section -->
 				<section class="block__one">
-					<div class="video">
-						<video class="video__media" autoplay loop muted>
-							<source src="https://elcho.ru/Untitled.mp4" type="video/mp4" />
-						</video>
-					</div>
-					<div class="block__one__title">
-						<div class="container">
-							<div class="content">
-								<div class="title">
-									<h1>Welcome to <span>Dev</span><span>X</span></h1>
-								</div>
-							</div>
+					<div class="container">
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+								nihil voluptatum enim laudantium quisquam exercitationem? Facere
+								neque excepturi voluptates consequatur iusto officiis, sint
+								laboriosam inventore laudantium id magnam praesentium libero
+								reprehenderit earum expedita autem incidunt animi quidem
+								molestias quam. Vel, expedita nemo? Quisquam placeat eos
+								molestiae deleniti repudiandae cupiditate, asperiores minima
+								omnis amet laborum officia ducimus accusamus odio unde fugiat
+								iure ipsam. Omnis recusandae dolorum iste perspiciatis incidunt
+								architecto quasi, impedit, est laudantium quia autem repellat
+								blanditiis asperiores ipsam neque iure corporis mollitia ab
+								dignissimos commodi. Dolores porro praesentium dolorum nemo
+								dicta maiores esse sed reiciendis minima itaque, nisi placeat!
+							</p>
 						</div>
 					</div>
 				</section>
 
-				<!-- ! 2 section -->
-				<!-- <section class="block__two">
+				<section>
 					<div class="container">
-						<div class="content">
-							<h1>Video</h1>
-							<div class="cards">
-								<div class="card">
-									<iframe
-										src="https://www.youtube.com/embed/BRybrM2ELIw"
-										title="YouTube video player"
-										frameborder="0"
-										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-										allowfullscreen></iframe>
-								</div>
-								<div class="card">
-									<iframe
-										src="https://www.youtube.com/embed/zau4VpUxCBo"
-										title="YouTube video player"
-										frameborder="0"
-										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-										allowfullscreen></iframe>
-								</div>
-								<div class="card">
-									<iframe
-										src="https://www.youtube.com/embed/_P7S2lKif-A"
-										title="YouTube video player"
-										frameborder="0"
-										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-										allowfullscreen></iframe>
-								</div>
-								<div class="card">
-									<iframe
-										src="https://www.youtube.com/embed/5VD8n-0iiqw"
-										title="YouTube video player"
-										frameborder="0"
-										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-										allowfullscreen></iframe>
-								</div>
-								<div class="card">
-									<iframe
-										src="https://www.youtube.com/embed/p3ezI801X7s"
-										title="YouTube video player"
-										frameborder="0"
-										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-										allowfullscreen></iframe>
-								</div>
-								<div class="card">
-									<iframe
-										src="https://www.youtube.com/embed/UGMALfXWBXY"
-										title="YouTube video player"
-										frameborder="0"
-										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-										allowfullscreen></iframe>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section> -->
-
-				<!-- ! 3 section -->
-				<!-- <section class="block__three">
-					<div class="container">
-						<div class="content">
-							<h1>Music</h1>
-							<div class="players">
-								<div class="player">
-									<audio controls>
-										<source
-											src="https://elcho.ru/audio/1.mp3"
-											type="audio/mp3" />
-									</audio>
-								</div>
-								<div class="player">
-									<audio controls>
-										<source
-											src="https://elcho.ru/audio/2.mp3"
-											type="audio/mp3" />
-									</audio>
-								</div>
-								<div class="player">
-									<audio controls>
-										<source
-											src="https://elcho.ru/audio/3.mp3"
-											type="audio/mp3" />
-									</audio>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section> -->
-
-				<!-- ! 4 section -->
-				<!-- <section class="block__four">
-					<div class="container">
-						<div class="content">
-							<h1>Technologies and Tools</h1>
-							<div class="cards">
-								<div class="card">
-									<img src="./Elcho/img/icons/html.svg" alt="html" />
-								</div>
-								<div class="card">
-									<img src="./Elcho/img/icons/css3.svg" alt="css" />
-								</div>
-								<div class="card">
-									<img src="./Elcho/img/icons/javascript.svg" alt="js" />
-								</div>
-								<div class="card">
-									<img src="./Elcho/img/icons/react.svg" alt="react" />
-								</div>
-								<div class="card">
-									<img src="./Elcho/img/icons/redux.svg" alt="redux" />
-								</div>
-								<div class="card">
-									<img src="./Elcho/img/icons/sass.svg" alt="redux" />
-								</div>
-								<div class="card">
-									<img src="./Elcho/img/icons/framer.svg" alt="redux" />
-								</div>
-								<div class="card">
-									<img src="./Elcho/img/icons/bootstrap.svg" alt="redux" />
-								</div>
-								<div class="card">
-									<img src="./Elcho/img/icons/figma.svg" alt="redux" />
-								</div>
-								<div class="card">
-									<img src="./Elcho/img/icons/git.svg" alt="redux" />
-								</div>
-								<div class="card">
-									<img src="./Elcho/img/icons/firebase.svg" alt="redux" />
-								</div>
-								<div class="card">
-									<img
-										src="./Elcho/img/icons/visual-studio-code.svg"
-										alt="redux" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</section> -->
-
-				<!-- ! 5 section -->
-				<section class="block__five">
-					<div class="container">
-						<div class="slider">
-							<div class="box1 box">
-								<div class="bg"></div>
-								<div class="details">
-									<h2>I'm the first Box</h2>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										Integer lacinia dui lectus. Donec scelerisque ipsum diam, ac
-										mattis orci pellentesque eget.
-									</p>
-									<button>Check Now</button>
-								</div>
-
-								<div class="illustration"><div class="inner"></div></div>
-							</div>
-
-							<div class="box2 box">
-								<div class="bg"></div>
-								<div class="details">
-									<h2>I'm the second Box</h2>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										Integer lacinia dui lectus. Donec scelerisque ipsum diam, ac
-										mattis orci pellentesque eget.
-									</p>
-									<button>Check Now</button>
-								</div>
-
-								<div class="illustration">
-									<img src="./Elcho/img/icons/react.svg" alt="" />
-								</div>
-							</div>
-
-							<div class="box3 box">
-								<div class="bg"></div>
-								<div class="details">
-									<h2>I'm the third Box</h2>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										Integer lacinia dui lectus. Donec scelerisque ipsum diam, ac
-										mattis orci pellentesque eget.
-									</p>
-									<button>Check Now</button>
-								</div>
-
-								<div class="illustration"><div class="inner"></div></div>
-							</div>
-
-							<div class="box4 box">
-								<div class="bg"></div>
-								<div class="details">
-									<h2>I'm the fourth Box</h2>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										Integer lacinia dui lectus. Donec scelerisque ipsum diam, ac
-										mattis orci pellentesque eget.
-									</p>
-									<button>Check Now</button>
-								</div>
-
-								<div class="illustration"><div class="inner"></div></div>
-							</div>
-
-							<div class="box5 box">
-								<div class="bg"></div>
-								<div class="details">
-									<h2>I'm the fifth Box</h2>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										Integer lacinia dui lectus. Donec scelerisque ipsum diam, ac
-										mattis orci pellentesque eget.
-									</p>
-									<button>Check Now</button>
-								</div>
-
-								<div class="illustration"><div class="inner"></div></div>
-							</div>
-						</div>
-
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							class="prev"
-							width="56.898"
-							height="91"
-							viewBox="0 0 56.898 91">
-							<path
-								d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z"
-								transform="translate(0 91) rotate(-90)"
-								fill="#fff" />
-						</svg>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							class="next"
-							width="56.898"
-							height="91"
-							viewBox="0 0 56.898 91">
-							<path
-								d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z"
-								transform="translate(56.898) rotate(90)"
-								fill="#fff" />
-						</svg>
-						<div class="trail">
-							<div class="box1 active">1</div>
-							<div class="box2">2</div>
-							<div class="box3">3</div>
-							<div class="box4">4</div>
-							<div class="box5">5</div>
-						</div>
+						<canvas id="myCanvas" width="200" height="100">awdawd</canvas>
 					</div>
 				</section>
 			</main>
@@ -352,20 +87,14 @@
 			<!-- ! footer -->
 			<footer class="footer">
 				<div class="container">
-					<div class="content">
-						<h1>By Elcho Effects</h1>
-					</div>
+					<div class="content"></div>
 				</div>
 			</footer>
 		</div>
 		<script
 			src="https://kit.fontawesome.com/cb3098e1fc.js"
 			crossorigin="anonymous"></script>
-		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
 		<script src="./Elcho/js/jquery-3.6.1.min.js"></script>
-		<script src="./Elcho/js/loader.js"></script>
-		<script src="./Elcho/js/carousel.js"></script>
 		<script src="./Elcho/js/script.js"></script>
 	</body>
 </html>

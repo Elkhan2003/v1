@@ -1,0 +1,46 @@
+@media (max-width: 770px) {
+	/* ! Header */
+	.header {
+		padding: 10px 0;
+	}
+
+	#header__scroll {
+		padding: 10px 0;
+		background: #333333a8;
+	}
+
+	#header__scroll.small {
+		padding: 7px 0;
+		background: #333333a8;
+		box-shadow: none;
+		box-shadow: 0 0 10px #03e9f4, 0 0 40px #03e9f4, 0 0 80px #03e9f4;
+	}
+
+	/* ! Nav */
+	.nav {
+		display: none;
+		width: 100%;
+
+		position: absolute;
+		top: 100%;
+		left: 0;
+
+		background: #333333a8;
+	}
+
+	.nav.active {
+		display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a{
+      display: block;
+      margin: 10px 0;
+    }
+	}
+
+	.nav-toggle {
+		display: block;
+	}
+}
