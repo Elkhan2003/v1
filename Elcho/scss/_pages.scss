@@ -92,41 +92,7 @@ a {
 		font-size: 20px;
 	}
 
-	// span {
-	// 	display: block;
-	// 	padding: 0 10px;
-
-	// 	font-weight: 700;
-	// 	font-size: 18px;
-	// 	position: relative;
-
-	// 	cursor: pointer;
-
-	// 	&::after {
-	// 		content: "";
-	// 		position: absolute;
-	// 		width: 0;
-	// 		height: 6px;
-	// 		border-radius: 16px;
-	// 		background: #03e9f4;
-	// 		box-shadow: 0 0 10px #03e9f4, 0 0 40px #03e9f4, 0 0 80px #03e9f4;
-	// 		left: 50%;
-	// 		bottom: -8px;
-	// 		transform: translateX(-50%);
-	// 		// transition: all 0.3s ease-out 0s;
-	// 		transition: 0.5s;
-	// 	}
-
-	// 	&:hover::after {
-	// 		width: 100%;
-	// 	}
-
-	// 	&.active::after {
-	// 		width: 100%;
-	// 	}
-	// }
-
-	.header__link {
+	span {
 		display: block;
 		padding: 0 10px;
 
@@ -135,27 +101,61 @@ a {
 		position: relative;
 
 		cursor: pointer;
+
+		&::after {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 6px;
+			border-radius: 16px;
+			background: #03e9f4;
+			box-shadow: 0 0 10px #03e9f4, 0 0 40px #03e9f4, 0 0 80px #03e9f4;
+			left: 50%;
+			bottom: -8px;
+			transform: translateX(-50%);
+			// transition: all 0.3s ease-out 0s;
+			transition: 0.5s;
+		}
+
+		&:hover::after {
+			width: 100%;
+		}
+
+		&.active::after {
+			width: 100%;
+		}
 	}
-	.header__link::after {
-		content: "";
-		position: absolute;
-		width: 0;
-		height: 6px;
-		border-radius: 16px;
-		background: #03e9f4;
-		box-shadow: 0 0 10px #03e9f4, 0 0 40px #03e9f4, 0 0 80px #03e9f4;
-		left: 50%;
-		bottom: -8px;
-		transform: translateX(-50%);
-		// transition: all 0.3s ease-out 0s;
-		transition: 0.5s;
-	}
-	.header__link:hover::after {
-		width: 100%;
-	}
-	.header__link.active::after {
-		width: 100%;
-	}
+
+	// .header__link {
+	// 	display: block;
+	// 	padding: 0 10px;
+
+	// 	font-weight: 700;
+	// 	font-size: 18px;
+	// 	position: relative;
+
+	// 	cursor: pointer;
+	// }
+	// .header__link::after {
+	// 	content: "";
+	// 	position: absolute;
+	// 	width: 0;
+	// 	height: 6px;
+	// 	border-radius: 16px;
+	// 	background: #03e9f4;
+	// 	box-shadow: 0 0 10px #03e9f4, 0 0 40px #03e9f4, 0 0 80px #03e9f4;
+	// 	left: 50%;
+	// 	bottom: -8px;
+	// 	transform: translateX(-50%);
+	// 	// transition: all 0.3s ease-out 0s;
+	// 	transition: 0.5s;
+	// }
+	// .header__link:hover::after {
+	// 	width: 100%;
+	// }
+	// .header__link.active::after {
+	// 	width: 100%;
+	// }
 }
 
 // ! nav toggle

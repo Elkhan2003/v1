@@ -23,15 +23,15 @@ window.onscroll = function () {
 $(function () {
 	// ! Smooth scroll
 	$(document).ready(function () {
-		$('.nav a[data-scroll^="#"]').click(function () {
+		$('.nav a span[data-scroll^="#"]').click(function () {
 			let target = $(this).attr("data-scroll");
 			$("html, body").animate(
 				{
 					scrollTop: $(target).offset().top - 70,
 				},
-				700
+				500
 			);
-			$(".nav a span").removeClass("active");
+			$('.nav a span[data-scroll^="#"]').removeClass("active");
 			$(this).addClass("active");
 			return false;
 		});
@@ -40,7 +40,7 @@ $(function () {
 	// ! scroll top
 	$(function () {
 		$("#scroll_top").click(function () {
-			$("html, body").animate({ scrollTop: 0 }, 600);
+			$("html, body").animate({ scrollTop: 0 }, 200);
 			return false;
 		});
 	});
