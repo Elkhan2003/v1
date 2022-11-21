@@ -30,17 +30,30 @@
 
 	.nav.active {
 		display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 
-    a{
-      display: block;
-      margin: 10px 0;
-    }
+		a {
+			display: block;
+			margin: 10px 0;
+		}
 	}
 
 	.nav-toggle {
 		display: block;
+	}
+}
+@media (max-width: 920px) {
+	.block__one {
+		.content {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.picture {
+			margin-top: 30px;
+		}
 	}
 }

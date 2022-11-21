@@ -202,7 +202,7 @@ a {
 
 // ! main
 .main {
-	margin-top: 90px;
+	margin-top: 50px;
 }
 // ! 1 section
 .block__one {
@@ -249,6 +249,14 @@ a {
 			100% {
 				left: 0%;
 			}
+		}
+	}
+
+	// ? picture
+	.picture {
+		img {
+			width: 100%;
+			max-width: 450px;
 		}
 	}
 }
