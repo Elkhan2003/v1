@@ -305,7 +305,57 @@ a {
 
 // ! 2 section
 .block__two {
-	margin: 70px 0;
+	margin: 100px 0;
+	padding: 50px 0;
+
+	box-shadow: 0 0 10px #03e9f4, 0 0 40px #03e9f4, 0 0 80px #03e9f4;
+	background: rgba(0, 0, 0, 0.4);
+	backdrop-filter: blur(7px);
+
+	.sub__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.text {
+			.title {
+				margin-bottom: 30px;
+
+				text-align: center;
+				font-size: 40px;
+				font-family: "PermanentMarker";
+				text-shadow: 0 0 10px #03e9f4, 0 0 40px #03e9f4, 0 0 80px #03e9f4;
+
+				color: aqua;
+
+				span {
+					color: red;
+				}
+			}
+			p {
+				max-width: 740px;
+				font-size: 20px;
+				font-weight: 700;
+				color: white;
+
+				span {
+					font-style: italic;
+					color: red;
+				}
+			}
+		}
+		.photo {
+			img {
+				width: 350px;
+				border-radius: 15px;
+				box-shadow: 0 0 10px #03e9f4, 0 0 40px #03e9f4;
+			}
+		}
+	}
+}
+
+// ! 3 section
+.block__three {
+	margin: 100px 0;
 
 	box-shadow: 0 0 10px #03e9f4, 0 0 40px #03e9f4, 0 0 80px #03e9f4;
 	background: #111111;

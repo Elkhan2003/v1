@@ -57,3 +57,16 @@
 		}
 	}
 }
+@media (max-width: 1200px) {
+	.block__two {
+		.sub__content {
+			flex-direction: column-reverse;
+
+			.photo {
+				img {
+					margin-top: 50px;
+				}
+			}
+		}
+	}
+}
