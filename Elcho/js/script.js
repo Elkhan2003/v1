@@ -47,6 +47,7 @@ window.onscroll = function () {
 // 	});
 // });
 
+
 // ! Smooth scroll
 function initSmoothScroll() {
 	let navLinks = document.querySelectorAll('.nav a span[data-scroll^="#"]');
@@ -64,17 +65,17 @@ function initSmoothScroll() {
 			this.classList.add("active");
 		});
 	});
-}
 
-// ! scroll top
-// function initScrollTop() {
-// 	document.getElementById("scroll_top").addEventListener("click", function () {
-// 		document.querySelector("html, body").animate({
-// 			scrollTop: 0
-// 		}, 200);
-// 		return false;
-// 	});
-// }
+	// ! Smooth scroll for Home top
+	const homeLink = document.querySelector('.nav a span[data-scroll="#home"]');
+	homeLink.addEventListener("click", function (event) {
+		event.preventDefault();
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth"
+		});
+	});
+}
 
 // ! menu
 function initMenu() {
@@ -100,5 +101,4 @@ function initMenu() {
 document.addEventListener("DOMContentLoaded", function () {
 	initSmoothScroll();
 	initMenu();
-	// initScrollTop();
 });
