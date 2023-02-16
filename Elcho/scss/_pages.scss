@@ -404,6 +404,54 @@ a {
 	}
 }
 
+// ! 6 section
+.block__six {
+	margin: 100px 0;
+	padding: 50px 0;
+
+	box-shadow: 0 0 10px #03e9f4, 0 0 40px #03e9f4, 0 0 80px #03e9f4;
+	background: rgba(0, 0, 0, 0.4);
+	backdrop-filter: blur(7px);
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.title {
+			margin-bottom: 20px;
+
+			text-align: center;
+			font-size: 40px;
+			font-family: "PermanentMarker";
+			text-shadow: 0 0 10px #03e9f4, 0 0 40px #03e9f4, 0 0 80px #03e9f4;
+
+			color: aqua;
+
+			span {
+				color: red;
+			}
+		}
+	}
+
+	.contact__icons {
+		display: flex;
+		a {
+			display: block;
+			margin: 0 20px;
+		}
+		img {
+			border-radius: 50%;
+			width: 100px;
+
+			&:first-child {
+				margin: 5px;
+			}
+		}
+	}
+}
+
 // ! footer
 .footer {
 	margin-top: auto;
